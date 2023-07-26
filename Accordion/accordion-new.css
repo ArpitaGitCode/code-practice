@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.accor-container{
+    margin: 20px;
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 20px;
+}
+.accor-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accor-header span{
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaa;
+    display: none;
+}
+.accor-body, .accor-header span + span{
+    display: none;
+}
+.accor-show .accor-header span:first-of-type{
+    display: none;
+}
+.accor-show .accor-body,
+.accor-show .accor-header span + span{
+    display: block;
+}
